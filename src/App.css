@@ -1,0 +1,231 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 5.25rem;
+
+}
+
+
+
+.cabecalho{
+ /*  nome das classes do componente de cabecalho */
+  background-color: #F36D10;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 4%;
+  
+  
+  
+}
+.quadradologo{
+  background-color: #FFBE81;
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  border-radius: 0 0 48px 48px;
+ 
+  
+  
+  margin-left: 80px;
+}
+.quadradologo img{
+  height: 100px;
+  width: 200px; 
+
+}
+
+/* ---------------------------------------------------------------------- */
+
+
+.container-main {
+  width: 100%;
+  height: auto;
+
+  padding-top: 64px;
+
+  justify-content: center; 
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+
+}
+
+.container-esquerda {
+  width: 50%;
+}
+
+.busca{
+  background-color: #EDEDED;
+  width: 100%;
+  height: 200px;
+  padding: 5px 100px;
+
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+  font-size: 2rem;
+  
+  
+}
+.busca > h3{
+  color: #F36D10;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+
+}
+
+.busca > p {
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  gap: 0 16px;
+}
+.busca > p > input{  
+  height: 40px;
+  min-width: 220px;
+  width: calc(100% - 20px);
+  border: 0;
+  outline: 0;
+
+  border-radius: 4px;
+
+  padding: 0 8px;
+
+}
+
+.busca > #number-odas {
+ 
+  color: #6d6d6d;
+  width: 100px;
+  min-width: 60px ;
+  font-size: 40px;
+  margin: 0 45%;
+}
+
+.busca > p > input::placeholder{
+  color: #C5C5C5;
+  font-size: 1rem;
+  
+}
+
+/* ---------------------------------------------------------------------- */
+
+.container-texto {
+  padding: 4rem 0;
+  width: 96%;
+  height: auto;
+  margin: 0 auto;
+  /* background-color: pink; */
+}
+
+.container-texto > h3 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #F36D10;
+  margin: 1.3rem 0 ;
+}
+
+.container-texto > p {
+  font-size: 1.3rem;
+  color: #140b04;
+}
+
+.container-texto > p > strong {
+  font-size: 1.3rem;
+  color: #F36D10;
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+.container-lista {
+  
+  background-color: #EDEDED;
+  width: 50%;
+  height: 580px;
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+  padding: 10px 8px;
+
+  box-shadow: inset black 0px 0px 5px;
+  cursor: pointer;
+
+}
+
+.container-lista::-webkit-scrollbar {
+  width: 0px;
+}
+
+.container-lista > h3 {
+  color: #F36D10;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  
+}
+
+.container-lista > div > .lista > .lista-content > h1 {
+  color: #F36D10;
+  font-size: 0.8rem;
+}
+
+.container-lista > div > .lista > .lista-content > hr {
+  border-top: 1px solid #F36D10;
+  margin: 8px 0;
+}
+
+
+/* ---------------------------------------------------------------------- */
+
+.rodape{
+ /*  nome das classes do componente de rodape */
+
+  margin-top: 30px;
+  background-color: #F36D10;
+  height: auto;
+  width: 100%;
+  padding: 1.2rem 2rem;
+  color: white;
+  font-size: 1rem;
+
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  
+}
+
+.rodape > img {
+  width: auto;
+  height: 70px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+@media screen and (max-width: 700px) {
+  .container-main {
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .container-esquerda {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container-lista {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .busca {
+    padding: 5px 20px;
+  }
+
+}
